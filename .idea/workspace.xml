@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e60d29d3-16cb-4665-9c06-95e7370db9af" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kmqTU3muPOQM1FWPCl41JIua2i" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php_project\research\POS2\dist\js\pages" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php_project\research\POS4" />
+      <recent name="C:\xampp\htdocs\php_project\research\POS4\controllers" />
+      <recent name="C:\xampp\htdocs\php_project\research\POS2" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e60d29d3-16cb-4665-9c06-95e7370db9af" name="Default Changelist" comment="" />
+      <created>1606316121878</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606316121878</updated>
+      <workItem from="1606316129491" duration="14462000" />
+      <workItem from="1606366472062" duration="164000" />
+      <workItem from="1606366639350" duration="5356000" />
+      <workItem from="1606411416676" duration="7744000" />
+      <workItem from="1606453939654" duration="4636000" />
+      <workItem from="1606465890234" duration="449000" />
+      <workItem from="1606487438584" duration="7903000" />
+      <workItem from="1606500150158" duration="2005000" />
+      <workItem from="1606549962540" duration="675000" />
+      <workItem from="1606567920527" duration="15366000" />
+      <workItem from="1606622165651" duration="10363000" />
+      <workItem from="1606636083947" duration="633000" />
+      <workItem from="1606637009998" duration="187000" />
+      <workItem from="1606637548424" duration="1207000" />
+      <workItem from="1606639289200" duration="650000" />
+      <workItem from="1606639957684" duration="144000" />
+      <workItem from="1606640940696" duration="2392000" />
+      <workItem from="1606666972948" duration="9762000" />
+      <workItem from="1606710464505" duration="10720000" />
+      <workItem from="1606746842485" duration="14846000" />
+      <workItem from="1606797234921" duration="8550000" />
+      <workItem from="1606827130264" duration="12073000" />
+      <workItem from="1607754373752" duration="9316000" />
+      <workItem from="1607786708917" duration="12307000" />
+      <workItem from="1607837804814" duration="9758000" />
+      <workItem from="1607924023728" duration="4100000" />
+      <workItem from="1608043095560" duration="762000" />
+      <workItem from="1608181704787" duration="9841000" />
+      <workItem from="1608212283997" duration="7514000" />
+      <workItem from="1608267328289" duration="5697000" />
+      <workItem from="1608303089986" duration="11792000" />
+      <workItem from="1608352966131" duration="11438000" />
+      <workItem from="1609220175304" duration="1787000" />
+      <workItem from="1609771376753" duration="2419000" />
+      <workItem from="1610611580445" duration="1202000" />
+      <workItem from="1610803383837" duration="109000" />
+      <workItem from="1611124109144" duration="8584000" />
+      <workItem from="1611380575452" duration="7445000" />
+      <workItem from="1611413424721" duration="739000" />
+      <workItem from="1612112319370" duration="599000" />
+      <workItem from="1612419889848" duration="1639000" />
+      <workItem from="1612421882720" duration="158000" />
+      <workItem from="1612423094984" duration="29000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1205" y="346" key="#Notifications" timestamp="1606757083624">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1205" y="346" key="#Notifications/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606757083624" />
+    <state x="-1506" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606500080079">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1506" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606500080079" />
+    <state x="-1197" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606588823102">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1197" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606588823102" />
+    <state x="-1230" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607927789102">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1230" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1607927789102" />
+    <state x="-1180" y="275" key="FileChooserDialogImpl" timestamp="1607765762764">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1180" y="275" key="FileChooserDialogImpl/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1607765762764" />
+    <state x="0" y="0" width="1294" height="737" key="dock-window-1" timestamp="1606637196838">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="0" width="1294" height="737" key="dock-window-1/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606637196838" />
+    <state x="-1304" y="240" key="run.anything.popup" timestamp="1608307080242">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1304" y="240" key="run.anything.popup/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608307080242" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/ajax/datatable-products.ajax.php</url>
+          <line>12</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/dist/js/sales.js</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/testcontroller.php</url>
+          <line>6</line>
+          <properties>
+            <option name="className" value="" />
+            <option name="methodName" value="\fillProduct" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
