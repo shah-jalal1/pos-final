@@ -2,6 +2,108 @@
 include "header.php";
 ?>
 
+script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<link href="src/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="lib/jquery.js" type="text/javascript"></script>
+<script src="src/facebox.js" type="text/javascript"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $('a[rel*=facebox]').facebox({
+      loadingImage : 'src/loading.gif',
+      closeImage   : 'src/closelabel.png'
+    })
+  })
+</script>
+<title>
+POS
+</title>
+    <link rel="shortcut icon" href="images/pos.jpg">
+<?php
+	require_once('auth.php');
+?>
+       
+		<link href="vendors/uniform.default.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/DT_bootstrap.css">
+  
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+	<!-- combosearch box-->	
+	
+	  <script src="vendors/jquery-1.7.2.min.js"></script>
+    <script src="vendors/bootstrap.js"></script>
+
+	<link rel="stylesheet" href="select2.min.css" />
+	
+<link href="../style.css" media="screen" rel="stylesheet" type="text/css" />
+<!--sa poip up-->
+<script>
+function sum() {
+	
+			var txtFirstNumberValue = document.getElementById('qty').value;
+            var txtSecondNumberValue = document.getElementById('price').value;
+			var result = parseFloat(txtFirstNumberValue) * parseFloat(txtSecondNumberValue);
+            if (!isNaN(result)) {
+                document.getElementById('totalp').value = result;
+				
+            }
+				
+	
+            var txtFirstNumberValue = document.getElementById('txt1').value;
+            var txtSecondNumberValue = document.getElementById('txt2').value;
+			var first = parseInt(txtFirstNumberValue) * parseInt(txtSecondNumberValue)/100;
+            var result = parseInt(txtFirstNumberValue) - parseInt(first);
+            if (!isNaN(result)) {
+                document.getElementById('txt3').value = result;
+				document.getElementById('grand').value = result;
+            }
+			
+			
+			 var txtFirstNumberValue = document.getElementById('txt3').value;
+            var txtSecondNumberValue = document.getElementById('tax').value;
+			var first = parseInt(txtFirstNumberValue) * parseInt(txtSecondNumberValue)/100;
+            var result = parseInt(txtFirstNumberValue) + parseInt(first);
+            if (!isNaN(result)) {
+                document.getElementById('grand').value = result;
+				document.getElementById('taxpaid').value = first;
+				
+            }
+			
+			
+			 var txtFirstNumberValue = document.getElementById('payment').value;
+            var txtSecondNumberValue = document.getElementById('grand').value;
+            var result = parseInt(txtSecondNumberValue)- parseInt(txtFirstNumberValue);
+            if (!isNaN(result)) {
+                document.getElementById('change').value = result;
+				
+            }
+			
+			 var txtFirstNumberValue = document.getElementById('txt4').value;
+			 var result = parseInt(txtFirstNumberValue);
+            if (!isNaN(result)) {
+                document.getElementById('txt5').value = result;
+				}
+
+			
+        }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -575,6 +677,102 @@ while ($row = mysqli_fetch_assoc($result)){
 //<!--====================================================================================================-->
 //            <!--                                        Update User          --
 //--==================================================================================================== -->
+
+<?php
+			function formatMoney($number, $fractional=false) {
+					if ($fractional) {
+						$number = sprintf('%.2f', $number);
+					}
+					while (true) {
+						$replaced = preg_replace('/(-?\d+)(\d\d\d)/', '$1,$2', $number);
+						if ($replaced != $number) {
+							$number = $replaced;
+						} else {
+							break;
+						}
+					}
+					return $number;
+				}
+				include('../connect.php');
+				$d1=$_GET['product'];
+				$result = $db->prepare("SELECT *, price * qty as total FROM products WHERE p_id= :a ORDER BY product_id ASC");
+				$result->bindParam(':a', $d1);
+				$result->execute();
+				for($i=0; $row = $result->fetch(); $i++){
+				$total=$row['total'];
+				$availableqty=$row['qty'];
+				$brandid=$row['brand'];
+				
+				
+				if ($availableqty < 10) {
+				echo '<tr class="alert alert-warning record" style="color: #fff; background:rgb(255, 95, 66);">';
+				}
+				else {
+				echo '<tr class="record">';
+				}
+			?>
+		
+<td><?php echo $row['product_id']; ?></td>
+			<td>
+			
+			<?php
+	$resulta = $db->prepare("SELECT * FROM supliers WHERE suplier_id= :a");
+	$resulta->bindParam(':a', $brandid);
+	$resulta->execute();
+	for($i=0; $rowa = $resulta->fetch(); $i++){
+	echo $brandname=$rowa['suplier_name'];
+	
+	}
+	?>
+			
+			</td>
+			<td><?php echo $row['gen_name']; ?> </td>
+			<td><?php echo $row['gen_name_info']; ?> </td>
+			<td><?php echo $row['power']; ?></td>
+			<td><?php echo $row['package_type']; ?></td>
+			<td><?php echo $row['date']; ?></td>
+			<td><h4><?php echo $row['location']; ?></h4></td>
+	
+		
+			<td><?php
+			$pprice=$row['price'];
+			echo formatMoney($pprice, true);
+			?></td>
+			
+			<td><?php echo $row['qty']; ?></td>
+			<td><a rel="facebox" title="Click to edit the product" href="editproduct.php?id=<?php echo $row['product_id']; ?>"><button class="btn btn-warning"><i class="icon-edit"></i> </button> </a>
+			<a href="#" id="<?php echo $row['product_id']; ?>" class="delbutton" title="Click to Delete the product"><button class="btn btn-danger"><i class="icon-trash"></i></button></a>
+			</td>
+			</tr>
+			<?php
+				}
+				
+			?>
+		
+		
+		
+	</tbody> 
+</table>
+
+
+
+<div class="clearfix"></div>
+</div>
+</div>
+</br>
+</br>
+</br>
+
+</div>
+<script src="select2.min.js"></script>
+<script>
+$("#country").select2( {
+ placeholder: "Select Company",
+ allowClear: true
+ } );
+</script>
+
+
 
 include_once 'controllers/updateProduct.php';
 
