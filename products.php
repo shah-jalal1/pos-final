@@ -585,7 +585,59 @@ include_once 'controllers/updateProduct.php';
     <!--==================================================================================================== -->
 
 
+    <script>
+function sum() {
+	
+			var txtFirstNumberValue = document.getElementById('qty').value;
+            var txtSecondNumberValue = document.getElementById('price').value;
+			var result = parseFloat(txtFirstNumberValue) * parseFloat(txtSecondNumberValue);
+            if (!isNaN(result)) {
+                document.getElementById('totalp').value = result;
+				
+            }
+				
+	
+            var txtFirstNumberValue = document.getElementById('txt1').value;
+            var txtSecondNumberValue = document.getElementById('txt2').value;
+			var first = parseInt(txtFirstNumberValue) * parseInt(txtSecondNumberValue)/100;
+            var result = parseInt(txtFirstNumberValue) - parseInt(first);
+            if (!isNaN(result)) {
+                document.getElementById('txt3').value = result;
+				document.getElementById('grand').value = result;
+            }
+			
+			
+			 var txtFirstNumberValue = document.getElementById('txt3').value;
+            var txtSecondNumberValue = document.getElementById('tax').value;
+			var first = parseInt(txtFirstNumberValue) * parseInt(txtSecondNumberValue)/100;
+            var result = parseInt(txtFirstNumberValue) + parseInt(first);
+            if (!isNaN(result)) {
+                document.getElementById('grand').value = result;
+				document.getElementById('taxpaid').value = first;
+				
+            }
+			
+			
+			 var txtFirstNumberValue = document.getElementById('payment').value;
+            var txtSecondNumberValue = document.getElementById('grand').value;
+            var result = parseInt(txtSecondNumberValue)- parseInt(txtFirstNumberValue);
+            if (!isNaN(result)) {
+                document.getElementById('change').value = result;
+				
+            }
+			
+			 var txtFirstNumberValue = document.getElementById('txt4').value;
+			 var result = parseInt(txtFirstNumberValue);
+            if (!isNaN(result)) {
+                document.getElementById('txt5').value = result;
+				}
 
+			
+        }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
 
 
 <?php

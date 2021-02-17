@@ -247,7 +247,7 @@ include "header.php";
                     </form>
 
                     <?php
-                    include_once "controllers/addClientController.php";
+                    include_once "controllers/addSupplierController.php";
                     ?>
 
                 </div>
@@ -410,7 +410,7 @@ while ($row = mysqli_fetch_assoc($result)){
 <?php
 }
 
-include_once "controllers/updateClient.controller.php";
+include_once "controllers/updateSupplier.controller.php";
 
 ?>
 
